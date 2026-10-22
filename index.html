@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    
+    <title>Milk Scale App - Free Dairy Calculator | Nakul Kumar, Agwanpur Meerut</title>
+    
+    <meta name="description" content="Milk Scale App - Free smart app for dairy farmers and milk businessmen by Nakul Kumar, Agwanpur, Meerut. Calculate Badhotri, FAT sample and bills instantly. Download free APK now!">
+    <meta name="keywords" content="Milk Scale App, Nakul Kumar, Milk Scale App Nakul Kumar, dairy app India, milk calculator, Agwanpur Meerut, milk scale app download, badhotri calculator">
+    <meta name="author" content="Nakul Kumar">
+    
+    <!-- ============ FAVICON / LOGO FOR GOOGLE SEARCH ============ -->
+    <link rel="icon" type="image/png" sizes="512x512" href="images/milk-scale-app-logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/milk-scale-app-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/milk-scale-app-logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/milk-scale-app-logo.png">
+    <link rel="shortcut icon" href="images/milk-scale-app-logo.png">
+    
+    <!-- Open Graph for Google & Social -->
+    <meta property="og:title" content="Milk Scale App - Free Dairy Calculator">
+    <meta property="og:description" content="Free app for dairy farmers. Calculate Badhotri & bills in seconds. Made by Nakul Kumar, Agwanpur, Meerut.">
+    <meta property="og:image" content="images/nakul-kumar-milk-scale-app-founder.jpg">
+    <meta property="og:image:alt" content="Nakul Kumar, founder of Milk Scale App from Agwanpur Meerut">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Milk Scale App">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Milk Scale App - Free Dairy Calculator">
+    <meta name="twitter:image" content="images/nakul-kumar-milk-scale-app-founder.jpg">
+    
+    <!-- Structured Data: Person (Nakul Kumar) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nakul Kumar",
+      "image": "images/nakul-kumar-milk-scale-app-founder.jpg",
+      "jobTitle": "Founder & Developer of Milk Scale App",
+      "birthDate": "2008-01-05",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Agwanpur",
+        "addressRegion": "Meerut, Uttar Pradesh",
+        "addressCountry": "IN"
+      },
+      "alumniOf": "Chaudhary Charan Singh University, Meerut"
+    }
+    </script>
+    
+    <!-- Structured Data: Software Application -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Milk Scale App",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Android",
+      "image": "images/milk-scale-app-logo.png",
+      "logo": "images/milk-scale-app-logo.png",
+      "author": {
+        "@type": "Person",
+        "name": "Nakul Kumar"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      },
+      "description": "Free dairy calculator app to compute milk Badhotri, FAT sample and generate WhatsApp bills."
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #2e7d32; --primary-light: #4caf50; --primary-dark: #1b5e20;
+            --accent: #fbc02d; --accent-hover: #f9a825;
+            --bg-light: #f1f8e9; --text-dark: #1a251c; --text-muted: #4a5d4e;
+            --white: #ffffff; --card-shadow: 0 10px 30px rgba(46, 125, 50, 0.12);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; background-color: var(--bg-light); color: var(--text-dark); line-height: 1.7; overflow-x: hidden; min-width: 1200px; }
+
+        header { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); box-shadow: 0 2px 15px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid var(--primary-light); }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; }
+        .logo { font-size: 1.6rem; font-weight: 800; color: var(--primary-dark); text-decoration: none; display: flex; align-items: center; gap: 12px; cursor: pointer; }
+        .logo-badge { background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: white; width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; box-shadow: 0 4px 10px rgba(46,125,50,0.3); overflow: hidden; }
+        .logo-badge img { width: 100%; height: 100%; object-fit: cover; }
+        nav { display: flex; align-items: center; gap: 20px; }
+        nav a { text-decoration: none; color: var(--text-dark); font-weight: 600; font-size: 0.98rem; padding: 8px 16px; border-radius: 20px; transition: all 0.3s ease; cursor: pointer; }
+        nav a:hover, nav a.active { background: var(--primary-light); color: var(--white); }
+        nav a.btn-nav-download { background: var(--primary); color: var(--white); box-shadow: 0 4px 10px rgba(46,125,50,0.25); }
+        nav a.btn-nav-download:hover { background: var(--primary-dark); }
+
+        .slider-container { position: relative; max-width: 1200px; margin: 25px auto 0; border-radius: 24px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.15); background: #000; touch-action: pan-y; }
+        .slider-wrapper { display: flex; transition: transform 0.6s cubic-bezier(0.25,1,0.5,1); width: 400%; cursor: grab; }
+        .slider-wrapper:active { cursor: grabbing; }
+        .slide { width: 25%; position: relative; height: 480px; display: flex; align-items: center; overflow: hidden; }
+        .slide img.slide-bg { position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover; z-index: 0; }
+        .slide::after { content:''; position:absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(27,94,32,0.85) 100%); z-index: 1; }
+        .slide-content { color: var(--white); padding: 40px 60px; max-width: 750px; animation: fadeInUp 0.8s ease forwards; position: relative; z-index: 2; }
+        .slide-tag { display: inline-block; background: var(--accent); color: #000; font-weight: 700; padding: 6px 16px; border-radius: 30px; font-size: 0.9rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .slide-content h2 { font-size: 2.5rem; line-height: 1.25; font-weight: 800; margin-bottom: 15px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+        .slide-content p { font-size: 1.15rem; margin-bottom: 25px; opacity: 0.95; text-shadow: 0 1px 4px rgba(0,0,0,0.5); }
+        .dots-container { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 10; }
+        .dot { width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: all 0.3s; }
+        .dot.active { background: var(--accent); width: 32px; border-radius: 10px; }
+        .btn-download-hero { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, #2e7d32, #4caf50); color: white; padding: 14px 32px; font-size: 1.1rem; font-weight: 700; text-decoration: none; border-radius: 50px; box-shadow: 0 6px 20px rgba(46,125,50,0.4); transition: all 0.3s ease; border: 2px solid rgba(255,255,255,0.2); }
+        .btn-download-hero:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(46,125,50,0.6); background: linear-gradient(135deg, #1b5e20, #2e7d32); }
+
+        .container { max-width: 1150px; margin: 40px auto; padding: 0 20px; }
+        .page-section { display: block; animation: fadeIn 0.5s ease; }
+        .page-section.hidden { display: none; }
+
+        .founder-highlight { display: flex; align-items: center; gap: 30px; background: linear-gradient(135deg, #ffffff 0%, #f1f8e9 100%); border-radius: 24px; padding: 30px; margin-top: 30px; box-shadow: var(--card-shadow); border: 2px solid rgba(76,175,80,0.2); }
+        .founder-highlight img.founder-photo { width: 160px; height: 160px; object-fit: cover; border-radius: 16px; border: 3px solid var(--primary); box-shadow: 0 8px 20px rgba(46,125,50,0.3); flex-shrink: 0; }
+        .founder-info { flex: 1; }
+        .founder-info h3 { font-size: 1.6rem; color: var(--primary-dark); font-weight: 800; margin-bottom: 6px; }
+        .founder-info .founder-role { color: var(--primary); font-weight: 700; font-size: 1rem; margin-bottom: 10px; }
+        .founder-info p.founder-bio { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
+        .founder-info .founder-loc { display: inline-flex; align-items: center; gap: 6px; background: white; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; color: var(--primary-dark); border: 1px solid rgba(76,175,80,0.3); margin-top: 8px; }
+
+        .app-quick-stats { background: var(--white); border-radius: 20px; padding: 25px 30px; margin-top: 30px; display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px; box-shadow: var(--card-shadow); border: 1px solid rgba(76,175,80,0.15); }
+        .stat-item { display: flex; align-items: center; gap: 15px; }
+        .stat-icon { width: 50px; height: 50px; border-radius: 50%; background: var(--bg-light); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; }
+        .stat-info h4 { font-size: 1.1rem; color: var(--primary-dark); font-weight: 700; }
+        .stat-info p { font-size: 0.9rem; color: var(--text-muted); }
+
+        .section-title { text-align: center; font-size: 2.2rem; color: var(--primary-dark); margin: 60px 0 15px; font-weight: 800; }
+        .section-subtitle { text-align: center; color: var(--text-muted); font-size: 1.05rem; max-width: 650px; margin: 0 auto 40px; }
+        .title-underline { width: 80px; height: 5px; background: linear-gradient(90deg, var(--primary), var(--primary-light)); margin: 10px auto 0; border-radius: 10px; }
+
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
+        .feature-card { background: var(--white); padding: 35px 25px; border-radius: 20px; box-shadow: var(--card-shadow); text-align: center; border-bottom: 4px solid var(--primary-light); transition: all 0.3s ease; position: relative; overflow: hidden; }
+        .feature-card:hover { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(46,125,50,0.2); border-bottom-color: var(--accent); }
+        .feature-icon-wrapper { width: 70px; height: 70px; margin: 0 auto 20px; background: var(--bg-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 2rem; transition: transform 0.3s; }
+        .feature-card:hover .feature-icon-wrapper { transform: scale(1.1) rotate(5deg); background: var(--primary); color: white; }
+        .feature-card h3 { margin-bottom: 12px; color: var(--primary-dark); font-size: 1.35rem; font-weight: 700; }
+        .feature-card p { color: var(--text-muted); font-size: 0.98rem; }
+
+        .screenshots-section { margin-top: 70px; padding: 50px 30px; background: var(--white); border-radius: 24px; box-shadow: var(--card-shadow); }
+        .screenshots-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; margin-top: 40px; }
+        .screenshot-card { background: #f9f9f9; border-radius: 16px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease; aspect-ratio: 9/16; border: 2px solid #eee; }
+        .screenshot-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(46,125,50,0.2); }
+        .screenshot-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+        .how-it-works-box { background: linear-gradient(135deg, #e8f5e9, #f1f8e9); padding: 50px 30px; border-radius: 24px; margin-top: 50px; box-shadow: inset 0 0 20px rgba(0,0,0,0.02); border: 1px solid rgba(76,175,80,0.2); }
+        .steps-container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 25px; margin-top: 40px; }
+        .step-card { flex: 1; min-width: 240px; background: var(--white); padding: 30px 20px; border-radius: 18px; box-shadow: var(--card-shadow); text-align: center; position: relative; }
+        .step-number { width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: white; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.4rem; font-weight: 800; margin: 0 auto 20px; box-shadow: 0 4px 12px rgba(46,125,50,0.3); }
+        .step-card h4 { font-size: 1.2rem; color: var(--primary-dark); margin-bottom: 10px; font-weight: 700; }
+        .step-card p { font-size: 0.95rem; color: var(--text-muted); }
+
+        .cta-section { background: linear-gradient(135deg, var(--primary-dark), var(--primary)); color: white; text-align: center; padding: 60px 25px; border-radius: 28px; margin-top: 70px; box-shadow: 0 15px 40px rgba(27,94,32,0.3); position: relative; overflow: hidden; }
+        .cta-section::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 60%); pointer-events: none; }
+        .cta-section h2 { font-size: 2.3rem; margin-bottom: 15px; font-weight: 800; }
+        .cta-section p { font-size: 1.15rem; margin-bottom: 30px; opacity: 0.9; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .btn-cta-accent { background: var(--accent); color: #000; padding: 16px 42px; font-size: 1.15rem; font-weight: 800; text-decoration: none; border-radius: 50px; display: inline-flex; align-items: center; gap: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); transition: all 0.3s ease; }
+        .btn-cta-accent:hover { background: var(--accent-hover); transform: scale(1.05); }
+
+        .about-page-wrapper { background: #fff; color: #000; font-family: 'Poppins','Noto Sans Devanagari',sans-serif; padding: 50px 30px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); max-width: 900px; margin: 40px auto; border: 1px solid #e0e0e0; }
+        .about-page-wrapper * { color: inherit; }
+        .profile-photo-box { width: 160px; height: 160px; margin: 0 auto 25px; border-radius: 8px; overflow: hidden; border: 2px solid #222; background: #f0f0f0; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
+        .profile-photo-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .about-name { text-align: center; font-size: 2rem; font-weight: 800; color: #000 !important; margin-bottom: 6px; letter-spacing: 0.5px; }
+        .about-role { text-align: center; font-size: 1rem; color: #555 !important; margin-bottom: 25px; font-weight: 500; }
+        .about-info-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 35px; }
+        .about-pill { background: #f2f2f2; color: #222 !important; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid #ddd; display: flex; align-items: center; gap: 6px; }
+        .about-pill i { color: #555 !important; font-size: 0.85rem; }
+        .about-divider { height: 1px; background: #ddd; margin: 30px 0; border: none; }
+        .about-section-title { font-size: 1.3rem; font-weight: 700; color: #000 !important; margin-bottom: 18px; padding-bottom: 8px; border-bottom: 1px solid #ccc; display: flex; align-items: center; gap: 10px; }
+        .about-section-title i { color: #333 !important; font-size: 1.1rem; }
+        .about-text-block { margin-bottom: 22px; }
+        .about-text-block h4 { font-size: 1.02rem; font-weight: 700; color: #111 !important; margin-bottom: 8px; }
+        .about-text-block p { font-size: 0.95rem; color: #333 !important; line-height: 1.75; margin-bottom: 10px; text-align: justify; }
+        .about-quote { background: #f7f7f7; border-left: 4px solid #333; padding: 18px 22px; margin: 25px 0; font-style: italic; color: #222 !important; font-size: 0.97rem; line-height: 1.7; border-radius: 4px; }
+        .about-contact-box { margin-top: 30px; padding: 25px; background: #fafafa; border: 1px solid #e0e0e0; border-radius: 8px; text-align: center; }
+        .about-contact-box h4 { font-size: 1.1rem; font-weight: 700; color: #000 !important; margin-bottom: 8px; }
+        .about-contact-box p { font-size: 0.9rem; color: #555 !important; margin-bottom: 18px; }
+        .about-contact-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; margin: 6px; background: #222; color: #fff !important; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease; border: 1px solid #222; }
+        .about-contact-btn:hover { background: #000; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.25); }
+        .about-contact-btn.linkedin-btn { background: #444; border-color: #444; }
+        .about-contact-btn.linkedin-btn:hover { background: #222; }
+        .about-note { font-size: 0.8rem; color: #888 !important; margin-top: 15px; font-style: italic; }
+
+        footer { background: #111a12; color: #a3b8a5; text-align: center; padding: 40px 20px; margin-top: 80px; border-top: 4px solid var(--primary); }
+        footer a { color: var(--primary-light); text-decoration: none; font-weight: 600; }
+        footer a:hover { text-decoration: underline; }
+        .footer-content { max-width: 800px; margin: 0 auto; }
+        .footer-content p { margin-bottom: 12px; font-size: 0.95rem; }
+
+        @keyframes fadeIn { from { opacity:0; transform: translateY(10px);} to { opacity:1; transform: translateY(0);} }
+        @keyframes fadeInUp { from { opacity:0; transform: translateY(20px);} to { opacity:1; transform: translateY(0);} }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a onclick="showTab('home')" class="logo">
+                <div class="logo-badge"><img src="images/milk-scale-app-logo.png" alt="Milk Scale App Logo"></div>
+                <span>Milk Scale App</span>
+            </a>
+            <nav id="navMenu">
+                <a onclick="showTab('home')" id="nav-home" class="active"><i class="fa-solid fa-house"></i> Home</a>
+                <a onclick="scrollToSection('features')"><i class="fa-solid fa-star"></i> Features</a>
+                <a onclick="scrollToSection('how-it-works')"><i class="fa-solid fa-circle-info"></i> How It Works</a>
+                <a href="https://milk-scale.en.uptodown.com/android/download" target="_blank" class="btn-nav-download"><i class="fa-brands fa-android"></i> Download APK</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="home-page" class="page-section">
+        
+        <div class="slider-container" id="sliderContainer">
+            <div class="slider-wrapper" id="sliderWrapper">
+                
+                <div class="slide slide-1">
+                    <img class="slide-bg" src="images/milk-scale-app-dairy-farmer-slide1.jpg" alt="Indian dairy farmer using Milk Scale App to calculate milk accounts">
+                    <div class="slide-content">
+                        <span class="slide-tag"><i class="fa-solid fa-seedling"></i> भारतीय किसानों की पहली पसंद</span>
+                        <h2>Milk Scale App से महीनों का दूध का हिसाब निकालें चुटकियों में!</h2>
+                        <p>अब रजिस्टर या डायरी पर घंटों सिर खपाने की जरूरत नहीं। बढ़ोतरी, सैंपल और कुल भुगतान की सटीक गणना तुरंत करें।</p>
+                        <a href="https://milk-scale.en.uptodown.com/android/download" target="_blank" class="btn-download-hero"><i class="fa-brands fa-android"></i> मुफ्त डाउनलोड करें (5.65 MB)</a>
+                    </div>
+                </div>
+
+                <div class="slide slide-2">
+                    <img class="slide-bg" src="images/milk-scale-app-cow-green-field-slide2.jpg" alt="Cow grazing in green field - Milk Scale App dairy farming India">
+                    <div class="slide-content">
+                        <span class="slide-tag"><i class="fa-solid fa-cow"></i> हरा-भरा गाँव, समृद्ध डेयरी</span>
+                        <h2>पशुपालकों और डेयरी मालिकों का भरोसेमंद डिजिटल साथी</h2>
+                        <p>अपनी डेयरी के काम को स्मार्ट और डिजिटल बनाएं। ग्राहकों का सारा बही-खाता एक ही स्थान पर सुरक्षित रखें।</p>
+                        <a href="https://milk-scale.en.uptodown.com/android/download" target="_blank" class="btn-download-hero"><i class="fa-solid fa-download"></i> अभी ऐप इंस्टॉल करें</a>
+                    </div>
+                </div>
+
+                <div class="slide slide-3">
+                    <img class="slide-bg" src="images/milk-scale-app-milk-fat-testing-slide3.jpg" alt="Milk FAT testing machine - Milk Scale App accurate calculation">
+                    <div class="slide-content">
+                        <span class="slide-tag"><i class="fa-solid fa-flask"></i> 100% सटीक कैलकुलेशन</span>
+                        <h2>दूध का सैंपल, फैट (FAT) और बढ़ोतरी (Badhotri) की सटीक गणना</h2>
+                        <p>सैंपल और लीटर डालते ही ऐप बिना किसी गलती के कुल वजन और कुल रुपयों का बिल बनाकर तैयार कर देता है।</p>
+                        <a href="https://milk-scale.en.uptodown.com/android/download" target="_blank" class="btn-download-hero"><i class="fa-brands fa-android"></i> अभी इस्तेमाल करें</a>
+                    </div>
+                </div>
+
+                <div class="slide slide-4">
+                    <img class="slide-bg" src="images/milk-scale-app-smartphone-farm-slide4.jpg" alt="Farmer using Milk Scale App smartphone in green farm - free dairy app">
+                    <div class="slide-content">
+                        <span class="slide-tag"><i class="fa-solid fa-shield-halved"></i> सुरक्षित एवं आसान</span>
+                        <h2>100% नि:शुल्क, ऑफलाइन और इस्तेमाल करने में बेहद सरल!</h2>
+                        <p>इंटरनेट न होने पर भी यह ऐप काम करता है। आपका सारा डेटा आपके अपने फोन में पूरी तरह से सुरक्षित रहता है।</p>
+                        <a href="https://milk-scale.en.uptodown.com/android/download" target="_blank" class="btn-download-hero"><i class="fa-solid fa-cloud-arrow-down"></i> अभी APK डाउनलोड करें</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="dots-container" id="dotsContainer">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+                <span class="dot" onclick="goToSlide(3)"></span>
+            </div>
+        </div>
+
+        <div class="container">
+            
+            <div class="founder-highlight">
+                <img class="founder-photo" src="images/nakul-kumar-milk-scale-app-founder.jpg" alt="Nakul Kumar, founder and developer of Milk Scale App from Agwanpur, Meerut, Uttar Pradesh">
+                <div class="founder-info">
+                    <h3>Nakul Kumar</h3>
+                    <p class="founder-role">Founder & Developer — Milk Scale App</p>
+                    <p class="founder-bio">A young self-taught developer from Agwanpur village in Meerut, Uttar Pradesh, who built Milk Scale App to help Indian dairy farmers calculate milk accounts, Badhotri and bills easily — completely free.</p>
+                    <span class="founder-loc"><i class="fa-solid fa-location-dot"></i> Agwanpur, Meerut (UP)</span>
+                </div>
+            </div>
+
+            <div class="app-quick-stats">
+                <div class="stat-item"><div class="stat-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div><div class="stat-info"><h4>100% Free</h4><p>No hidden charges</p></div></div>
+                <div class="stat-item"><div class="stat-icon"><i class="fa-solid fa-mobile-screen-button"></i></div><div class="stat-info"><h4>Lightweight (5.65 MB)</h4><p>Runs fast on every phone</p></div></div>
+                <div class="stat-item"><div class="stat-icon"><i class="fa-solid fa-lock"></i></div><div class="stat-info"><h4>Data Security</h4><p>All data stored on phone</p></div></div>
+                <div class="stat-item"><div class="stat-icon"><i class="fa-solid fa-language"></i></div><div class="stat-info"><h4>Hindi & English</h4><p>Simple bilingual interface</p></div></div>
+            </div>
+
+            <div id="features">
+                <h2 class="section-title">Key Features of Milk Scale App</h2>
+                <p class="section-subtitle">Special features to make dairy work easy and stress-free</p>
+                <div class="title-underline"></div>
+
+                <div class="features-grid" style="margin-top: 40px;">
+                    <div class="feature-card"><div class="feature-icon-wrapper"><i class="fa-solid fa-calculator"></i></div><h3>Instant Accurate Calculation</h3><p>Enter milk quantity (Kg) and sample (FAT) — Badhotri and total amount appear in seconds.</p></div>
+                    <div class="feature-card"><div class="feature-icon-wrapper"><i class="fa-solid fa-file-invoice-dollar"></i></div><h3>WhatsApp Bill & Slip</h3><p>Generate customer receipts and share directly on WhatsApp so there is never any dispute.</p></div>
+                    <div class="feature-card"><div class="feature-icon-wrapper"><i class="fa-solid fa-moon"></i></div><h3>Night / Dark Mode</h3><p>Dark mode is available so your eyes don't feel strain during early morning or late night work.</p></div>
+                    <div class="feature-card"><div class="feature-icon-wrapper"><i class="fa-solid fa-users-gear"></i></div><h3>Customer Management (Ledger)</h3><p>Save records of all your dairy customers separately and view their monthly history.</p></div>
+                    <div class="feature-card"><div class="feature-icon-wrapper"><i class="fa-solid fa-user-shield"></i></div><h3>Offline Data Safety</h3><p>Your ledger stays only on your phone. The app works without interruption even without internet.</p></div>
+                    <div class="feature-card"><div class="feature-icon-wrapper"><i class="fa-solid fa-heart-circle-check"></i></div><h3>Easy & Simple Language</h3><p>Designed in very simple Hindi for the convenience of our dairy brothers in villages and rural areas.</p></div>
+                </div>
+            </div>
+
+            <div class="screenshots-section">
+                <h2 class="section-title" style="margin-top: 0;">Milk Scale App Screenshots</h2>
+                <p class="section-subtitle">See how the Milk Scale App looks — Main Page, Features Page, Understanding and Calculator</p>
+                <div class="title-underline"></div>
+
+                <div class="screenshots-grid">
+                    <div class="screenshot-card"><img src="images/milk-scale-app-main-page-screenshot.jpg" alt="Milk Scale App main page screenshot - home screen with calculator"></div>
+                    <div class="screenshot-card"><img src="images/milk-scale-app-features-page-screenshot.jpg" alt="Milk Scale App features page screenshot - all tools for dairy farmers"></div>
+                    <div class="screenshot-card"><img src="images/milk-scale-app-understanding-page-screenshot.jpg" alt="Milk Scale App understanding page - how badhotri calculation works"></div>
+                    <div class="screenshot-card"><img src="images/milk-scale-app-calculator-page-screenshot.jpg" alt="Milk Scale App calculator page - instant milk badhotri and bill calculation"></div>
+                </div>
+            </div>
+
+            <div id="how-it-works" class="how-it-works-box">
+                <h2 class="section-title" style="margin-top: 0;">How Does Milk Scale App Work?</h2>
+                <p class="section-subtitle">Complete the milk calculation in just 3 easy steps</p>
+                <div class="steps-container">
+                    <div class="step-card"><div class="step-number">1</div><h4>1. Enter Milk & Sample</h4><p>Enter the customer's name, milk weight (kg) and FAT sample in the app.</p></div>
+                    <div class="step-card"><div class="step-number">2</div><h4>2. Auto Badhotri Calculation</h4><p>The app will automatically calculate Badhotri based on the milk standard.</p></div>
+                    <div class="step-card"><div class="step-number">3</div><h4>3. Enter Rate & Send Bill</h4><p>Enter the per-litre or per-FAT rate and send the WhatsApp slip to the customer instantly.</p></div>
+                </div>
+            </div>
+
+            <section class="cta-section" id="download">
+                <h2>Are you also troubled by calculation mistakes?</h2>
+                <p>Download Milk Scale App on your mobile today and make your dairy business digital and stress-free!</p>
+                <a href="https://milk-scale.en.uptodown.com/android/download" target="_blank" class="btn-cta-accent"><i class="fa-brands fa-android"></i> Download Now from Uptodown (APK)</a>
+            </section>
+
+        </div>
+    </div>
+
+    <div id="about-page" class="page-section hidden">
+        <div class="about-page-wrapper">
+            <div class="profile-photo-box">
+                <img src="images/nakul-kumar-milk-scale-app-founder.jpg" alt="Nakul Kumar, founder and developer of Milk Scale App from Agwanpur Meerut">
+            </div>
+            <h1 class="about-name">Nakul Kumar</h1>
+            <p class="about-role">Founder & Developer of Milk Scale App</p>
+
+            <div class="about-info-pills">
+                <div class="about-pill"><i class="fa-solid fa-cake-candles"></i> 5 January 2008</div>
+                <div class="about-pill"><i class="fa-solid fa-location-dot"></i> Village Agwanpur, Meerut (UP)</div>
+                <div class="about-pill"><i class="fa-solid fa-graduation-cap"></i> B.A. (CCSU Meerut)</div>
+            </div>
+
+            <hr class="about-divider">
+            <h2 class="about-section-title"><i class="fa-solid fa-book-open"></i> My Life Story</h2>
+
+            <div class="about-text-block">
+                <h4>1. Birth and Family Background</h4>
+                <p>I was born on <strong>5 January 2008</strong> in a small village called <strong>Agwanpur</strong> in Meerut district, Uttar Pradesh. My family is a simple middle-class family. My father is a farmer with about 20 bighas of land, and he also does embroidery (ironwork). My mother is a homemaker.</p>
+                <p>In childhood our situation was normal, but as time passed, the family expenses grew and the sources of income remained limited, so we also saw a period of financial hardship. We are five siblings — three elder brothers, then me, and the youngest is my sister.</p>
+            </div>
+
+            <div class="about-text-block">
+                <h4>2. Education and a Unique Turn</h4>
+                <p>I come from the Scheduled Caste (Jatav) community. Since childhood I have had a deep interest in studies and I believed in understanding the reason behind things rather than just memorising them. My primary education was at <strong>Saraswati Shishu Vidya Mandir</strong> in my village. After that, I completed classes 6 to 10 at <strong>Genius Public School (A.G.P.S), Agwanpur</strong>.</p>
+                <p>A very interesting turn came in my school education when I passed class 2. My elder brother was one year older than me and was in class 3. According to the rule, I was to go to class 3, but I jumped directly from class 2 to class 4! In this way, my brother and I came into the same class and we studied together till class 12.</p>
+                <p>I completed classes 11 and 12 (PCM — Physics, Chemistry, Maths) at <strong>Gandhi Smarak Inter College, Kila Parikshitgarh (GSDN)</strong>. Currently I have completed my Graduation (B.A.) from <strong>Chaudhary Charan Singh University (CCSU), Meerut</strong> through private mode.</p>
+            </div>
+
+            <div class="about-text-block">
+                <h4>3. Learning Coding on My Own Without a Computer</h4>
+                <p>I was attracted to technology and mobile phones since childhood. I had neither a computer nor any guide to teach me coding. But I did not give up and learned coding through self-learning using the internet and YouTube on my ordinary smartphone. By the age of 18–19, I had developed several apps and websites on my own. Even with limited pocket money, I bore the expenses of these digital projects.</p>
+            </div>
+
+            <div class="about-text-block">
+                <h4>4. How Did the Idea of Milk Scale App Come About?</h4>
+                <p>In my village Agwanpur, I saw that dairy businessmen and cattle owners spent hours at the end of the month adding up milk accounts, fat and Badhotri. There were also disputes when slips were lost or calculations went wrong.</p>
+                <p>I thought, why not find an easy digital solution to this rural problem? From this very thought, <strong>Milk Scale App</strong> was born, which today completes hours of work for dairy owners in just a few clicks.</p>
+            </div>
+
+            <div class="about-quote">
+                "I believe that staying in the race only for a government job is not the only success. In today's era, the most sustainable way to earn money is to solve a real problem in the market and sell something. Whether it is a product, a service, or your knowledge. Become self-reliant and develop a business mindset."
+            </div>
+
+            <hr class="about-divider">
+
+            <div class="about-contact-box">
+                <h4>Connect With Me</h4>
+                <p>If you have any suggestions or questions about the app, feel free to reach out:</p>
+                <a href="mailto:nak518000@gmail.com" class="about-contact-btn"><i class="fa-solid fa-envelope"></i> Send Email (Gmail)</a>
+                <a href="https://www.linkedin.com/in/nakul-kumar-663978445?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="about-contact-btn linkedin-btn"><i class="fa-brands fa-linkedin"></i> Connect on LinkedIn</a>
+                <p class="about-note">(For privacy reasons, the phone number has not been made public.)</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p style="font-size: 1.1rem; font-weight: 700; color: white;">Milk Scale App — Green India, Digital Dairy</p>
+            <p>© 2026 Milk Scale App. All Rights Reserved.</p>
+            <p style="font-weight: 700; font-size: 1.05rem; margin-top: 10px;">
+                <a onclick="showTab('about')" style="cursor:pointer; color: #fff; text-decoration: none;"><i class="fa-solid fa-circle-info" style="margin-right: 6px;"></i>About Us</a>
+            </p>
+            <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 15px;">100% free service for dairy businessmen and cattle owners.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabName) {
+            const homePage = document.getElementById('home-page');
+            const aboutPage = document.getElementById('about-page');
+            const navHome = document.getElementById('nav-home');
+            if (tabName === 'home') {
+                homePage.classList.remove('hidden'); aboutPage.classList.add('hidden');
+                navHome.classList.add('active'); window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else if (tabName === 'about') {
+                homePage.classList.add('hidden'); aboutPage.classList.remove('hidden');
+                navHome.classList.remove('active'); window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+        function scrollToSection(sectionId) {
+            showTab('home');
+            setTimeout(() => { const el = document.getElementById(sectionId); if (el) el.scrollIntoView({ behavior: 'smooth' }); }, 100);
+        }
+        let currentSlide = 0; const totalSlides = 4;
+        const sliderWrapper = document.getElementById('sliderWrapper');
+        const dots = document.querySelectorAll('.dot');
+        let slideInterval;
+        function updateSlidePosition() {
+            sliderWrapper.style.transform = `translateX(-${currentSlide * 25}%)`;
+            dots.forEach((dot, i) => dot.classList.toggle('active', i === currentSlide));
+        }
+        function nextSlide() { currentSlide = (currentSlide + 1) % totalSlides; updateSlidePosition(); }
+        function prevSlide() { currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; updateSlidePosition(); }
+        function goToSlide(i) { currentSlide = i; updateSlidePosition(); resetTimer(); }
+        function startTimer() { slideInterval = setInterval(nextSlide, 4500); }
+        function resetTimer() { clearInterval(slideInterval); startTimer(); }
+        window.onload = function() { startTimer(); };
+        const sliderContainer = document.getElementById('sliderContainer');
+        sliderContainer.addEventListener('mouseenter', () => clearInterval(slideInterval));
+        sliderContainer.addEventListener('mouseleave', () => startTimer());
+        let touchStartX = 0, touchEndX = 0, isDragging = false;
+        sliderContainer.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; isDragging = true; clearInterval(slideInterval); }, { passive: true });
+        sliderContainer.addEventListener('touchmove', (e) => { if (isDragging) touchEndX = e.changedTouches[0].screenX; }, { passive: true });
+        sliderContainer.addEventListener('touchend', () => {
+            if (!isDragging) return; isDragging = false;
+            const th = 50;
+            if (touchEndX < touchStartX - th) nextSlide();
+            else if (touchEndX > touchStartX + th) prevSlide();
+            startTimer();
+        });
+        let mouseDownX = 0, mouseUpX = 0, mouseDragging = false;
+        sliderContainer.addEventListener('mousedown', (e) => { mouseDownX = e.screenX; mouseDragging = true; clearInterval(slideInterval); });
+        sliderContainer.addEventListener('mouseup', (e) => {
+            if (!mouseDragging) return; mouseDragging = false; mouseUpX = e.screenX;
+            if (mouseUpX < mouseDownX - 80) nextSlide();
+            else if (mouseUpX > mouseDownX + 80) prevSlide();
+            startTimer();
+        });
+    </script>
+</body>
+</html>

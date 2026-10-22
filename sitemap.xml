@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://your-website-url.com/</loc>
+    <image:image>
+      <image:loc>https://your-website-url.com/images/nakul-kumar-milk-scale-app-founder.jpg</image:loc>
+      <image:title>Nakul Kumar - Founder of Milk Scale App, Agwanpur Meerut</image:title>
+      <image:caption>Nakul Kumar, young developer from Agwanpur Meerut who built Milk Scale App</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://your-website-url.com/images/milk-scale-app-dairy-farmer-slide1.jpg</image:loc>
+      <image:title>Milk Scale App - Dairy Farmer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://your-website-url.com/images/milk-scale-app-cow-green-field-slide2.jpg</image:loc>
+      <image:title>Milk Scale App - Cow in Green Field</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://your-website-url.com/images/milk-scale-app-milk-fat-testing-slide3.jpg</image:loc>
+      <image:title>Milk Scale App - Milk FAT Testing</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://your-website-url.com/images/milk-scale-app-smartphone-farm-slide4.jpg</image:loc>
+      <image:title>Milk Scale App - Smartphone in Farm</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://your-website-url.com/images/milk-scale-app-main-page-screenshot.jpg</image:loc>
+      <image:title>Milk Scale App Main Page Screenshot</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://your-website-url.com/images/milk-scale-app-features-page-screenshot.jpg</image:loc>
+      <image:title>Milk Scale App Features Page Screenshot</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://your-website-url.com/images/milk-scale-app-understanding-page-screenshot.jpg</image:loc>
+      <image:title>Milk Scale App Understanding Page Screenshot</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://your-website-url.com/images/milk-scale-app-calculator-page-screenshot.jpg</image:loc>
+      <image:title>Milk Scale App Calculator Page Screenshot</image:title>
+    </image:image>
+  </url>
+</urlset> 
